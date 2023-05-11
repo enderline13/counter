@@ -5,7 +5,7 @@ Counter::Counter()
 {
     count = 0;
     num = new QLCDNumber(12);
-    butt = new QPushButton;
+    butt = new QPushButton("+");
     connect(butt, &QPushButton::clicked, this, &Counter::counterIncrease);
     QVBoxLayout* lay = new QVBoxLayout;
     lay->addWidget(num);
